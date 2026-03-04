@@ -1,0 +1,33 @@
+.cards-project > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+.cards-project > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.cards-project .cards-project-card-body {
+  margin: 16px;
+}
+
+.cards-project .cards-project-card-image {
+  line-height: 0;
+}
+
+.cards-project > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* transparent cards when inside a dark section */
+.dark .cards-project > ul > li {
+  background-color: transparent;
+  border-color: rgb(255 255 255 / 30%);
+}

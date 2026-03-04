@@ -22,7 +22,7 @@ function buildHeroBlock(main) {
   // eslint-disable-next-line no-bitwise
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
     // Check if h1 or picture is already inside a hero block
-    if (h1.closest('.hero') || picture.closest('.hero')) {
+    if (h1.closest('[class*="hero"]') || picture.closest('[class*="hero"]')) {
       return; // Don't create a duplicate hero block
     }
     const section = document.createElement('div');
@@ -114,6 +114,21 @@ function decorateButtons(main) {
 }
 
 /**
+ * Applies background images from section metadata data attributes.
+ * @param {Element} main The main element
+ */
+function decorateSectionBackgrounds(main) {
+  main.querySelectorAll('.section[data-background]').forEach((section) => {
+    const bg = section.dataset.background;
+    if (bg) {
+      section.style.backgroundImage = `url('${bg}')`;
+      section.style.backgroundSize = 'cover';
+      section.style.backgroundPosition = 'center';
+    }
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -124,6 +139,7 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateSectionBackgrounds(main);
 }
 
 /**

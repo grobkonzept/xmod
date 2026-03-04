@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-intro",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-04T14:17:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.bewegtbild.ch",
+    "originPage": "Film association homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "intro-section",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraphs | images",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "introduction sections with text and images",
+      "about sections with side-by-side layout",
+      "content pages with text-heavy left column and visual right column"
+    ],
+    "notSuitableFor": [
+      "comparison layouts",
+      "product feature columns",
+      "columns with equal content weight"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-04T14:17:00.000Z"
+  }
+}

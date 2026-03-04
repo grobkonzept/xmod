@@ -1,0 +1,88 @@
+.hero-film-container .hero-film-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-film {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 60px 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-film::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--overlay-color);
+  z-index: 1;
+}
+
+.hero-film > div {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-film > div:first-child {
+  display: none;
+}
+
+.hero-film h1,
+.hero-film h2,
+.hero-film h3,
+.hero-film h4,
+.hero-film h5,
+.hero-film h6 {
+  color: #fff;
+  text-align: center;
+}
+
+.hero-film p {
+  color: #fff;
+  text-align: center;
+}
+
+.hero-film a:any-link {
+  color: #fff;
+}
+
+.hero-film.no-image::after {
+  display: none;
+}
+
+.hero-film.no-image h1,
+.hero-film.no-image h2,
+.hero-film.no-image h3,
+.hero-film.no-image h4,
+.hero-film.no-image h5,
+.hero-film.no-image h6,
+.hero-film.no-image p {
+  color: var(--text-color);
+}
+
+.hero-film picture {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-film img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width >= 900px) {
+  .hero-film {
+    min-height: 500px;
+    padding: 80px 32px;
+  }
+}

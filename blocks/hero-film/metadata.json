@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-film",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-04T14:17:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.bewegtbild.ch",
+    "originPage": "Film association homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "film-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subheading + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "film/media project pages",
+      "creative portfolio pages",
+      "pages with full-width background image heroes"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "product landing pages",
+      "minimal/light hero layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-04T14:17:00.000Z"
+  }
+}

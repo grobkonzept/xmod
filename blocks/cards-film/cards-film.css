@@ -1,0 +1,27 @@
+.cards-film > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: 24px;
+}
+
+.cards-film > ul > li {
+  border: 1px solid #dadada;
+  background-color: var(--background-color);
+}
+
+.cards-film .cards-film-card-body {
+  margin: 16px;
+}
+
+.cards-film .cards-film-card-image {
+  line-height: 0;
+}
+
+.cards-film > ul > li img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}

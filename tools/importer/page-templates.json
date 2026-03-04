@@ -1,0 +1,32 @@
+{
+  "templates": [
+    {
+      "name": "bewegtbild-homepage",
+      "urls": ["https://www.bewegtbild.ch"],
+      "description": "Homepage for Bewegtbild film association - features hero sections, introduction columns, film project cards, and additional project links",
+      "blocks": [
+        {
+          "name": "hero-film",
+          "instances": [".p-ty62967.pagelayer-row", ".p-io72443.pagelayer-row"]
+        },
+        {
+          "name": "columns-intro",
+          "instances": [".p-u0m6798.pagelayer-row"]
+        },
+        {
+          "name": "cards-film",
+          "instances": [".p-7p82938.pagelayer-row"]
+        },
+        {
+          "name": "cards-project",
+          "instances": [".p-qqr9302.pagelayer-row"]
+        },
+        {
+          "name": "section-dark",
+          "instances": [".p-qqr9302.pagelayer-row"],
+          "section": "dark background with background image"
+        }
+      ]
+    }
+  ]
+}
